@@ -20,7 +20,10 @@ export default function Post() {
               className="text-gray-800 hover:text-blue-400"
               size={24}
             />
-            <FaTiktok className="text-gray-800 hover:text-black" size={24} />
+            <FaTiktok
+              className="text-gray-800 hover:text-purple-800"
+              size={24}
+            />
           </div>
         </div>
       </div>

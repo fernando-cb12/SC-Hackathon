@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/navbar";
 import Post from "./components/post";
+import HeaderContent from "./components/headerContent";
 
 function App() {
   return (
@@ -8,13 +9,20 @@ function App() {
       <div className="flex flex-col h-screen">
         <div className="flex flex-row">
           <Navbar />
-          <div className="flex-grow p-4">
-            <Post />
+          <div className="w-full">
+            <HeaderContent title="Test" />
+            <div className="flex flex-col space-y-4 w-1/2 pl-40">
+              <Post />
+              <Post />
+              <Post />
+              <Post />
+              <Post />
+              <Post />
+              <Post />
+              <Post />
+            </div>
           </div>
         </div>
-        <footer className="bg-gray-800 text-white p-4 text-center">
-          <p>© IGOR</p>
-        </footer>
       </div>
     </>
   );
