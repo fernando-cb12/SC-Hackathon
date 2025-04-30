@@ -12,14 +12,11 @@ function App() {
           <div className="w-full">
             <HeaderContent title="Test" />
             <div className="flex flex-col space-y-4 w-1/2 pl-40">
-              <Post />
-              <Post />
-              <Post />
-              <Post />
-              <Post />
-              <Post />
-              <Post />
-              <Post />
+              <Post
+                image="https://via.placeholder.com/150"
+                title="Post Title"
+                content="This is the content of the post."
+              />
             </div>
           </div>
         </div>
