@@ -1,13 +1,22 @@
 import Post from "./Home/post";
+import News from "./Home/news";
 
 export default function Home() {
   return (
     <>
-      <Post
-        image="https://via.placeholder.com/150"
-        title="Post Title"
-        content="This is the content of the post."
-      />
+      <div className="flex flex-container">
+        <Post
+          image="https://via.placeholder.com/150"
+          title="Post Title"
+          content="This is the content of the post."
+        />
+        <div className="flex flex-col flex-grow absolute top-15 right-0 w-1/4">
+          <News />
+          <News />
+          <News />
+          <News />
+        </div>
+      </div>
     </>
   );
 }

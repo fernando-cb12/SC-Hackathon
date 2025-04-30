@@ -12,7 +12,7 @@ export default function Navbar() {
 
   // Helper function to determine if a link is active
   const isActive = (path: string) => {
-    return location.pathname === path ? "bg-gray-700" : "";
+    return location.pathname === path ? "bg-orange-700" : "";
   };
 
   return (
@@ -20,25 +20,27 @@ export default function Navbar() {
       <nav className="flex flex-col space-y-2 items-center justify-center">
         <Link
           to="/"
-          className={`hover:bg-gray-700 p-2 rounded ${isActive("/")}`}
+          className={`hover:bg-[#F2F0EB] p-2 rounded-md ${isActive("/")}`}
         >
           <HomeIcon className="h-7 w-7 inline-block mr-2" />
         </Link>
         <Link
           to="/dashboard"
-          className={`hover:bg-gray-700 p-2 rounded ${isActive("/dashboard")}`}
+          className={`hover:bg-[#F2F0EB] p-2 rounded-md ${isActive(
+            "/dashboard"
+          )}`}
         >
           <Square2StackIcon className="h-7 w-7 inline-block mr-2" />
         </Link>
         <Link
           to="/map"
-          className={`hover:bg-gray-700 p-2 rounded ${isActive("/map")}`}
+          className={`hover:bg-[#F2F0EB] p-2 rounded-md  ${isActive("/map")}`}
         >
           <MapIcon className="h-7 w-7 inline-block mr-2" />
         </Link>
         <Link
           to="/help"
-          className={`hover:bg-gray-700 p-2 rounded ${isActive("/help")}`}
+          className={`hover:bg-[#F2F0EB] p-2 rounded-md   ${isActive("/help")}`}
         >
           <QuestionMarkCircleIcon className="h-7 w-7 inline-block mr-2" />
         </Link>
