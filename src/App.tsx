@@ -6,7 +6,7 @@ import HeaderContent from "./components/headerContent";
 function App() {
   return (
     <>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col">
         <div className="flex flex-row">
           <Navbar />
           <div className="w-full">
