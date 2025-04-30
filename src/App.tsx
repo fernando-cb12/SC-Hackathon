@@ -12,7 +12,7 @@ function App() {
   const renderPage = (title: string, Component: React.ComponentType) => (
     <div className="w-full flex flex-col bg-gray-100">
       <HeaderContent title={title} />
-      <div className="flex flex-col w-1/2 pl-40">
+      <div className="flex flex-col w-full ">
         <Component />
       </div>
     </div>
