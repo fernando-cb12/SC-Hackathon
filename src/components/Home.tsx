@@ -4,7 +4,7 @@ import News from "./Home/news";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-container">
+      <div className="flex flex-container w-1/2 pl-40">
         <Post
           image="https://via.placeholder.com/150"
           title="Post Title"
