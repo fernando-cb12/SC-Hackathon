@@ -15,7 +15,9 @@ export default function Post({
         <div className="bg-white shadow-md rounded-lg p-4">
           <h2 className="text-xl font-bold">{title}</h2>
           <p className="mt-2">{content}</p>
-          <img src={image} alt="Post" className="mt-4 rounded-lg" />
+          <div className="flex justify-center items-center">
+            <img src={image} alt="Post" className="mt-4 rounded-lg max-w-sm" />
+          </div>
           <div className="mt-4 flex space-x-4">
             <FaFacebook
               className="text-gray-800 hover:text-blue-600"
