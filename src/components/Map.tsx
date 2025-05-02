@@ -31,17 +31,21 @@ const MapComponent: React.FC = () => {
   const markers: MarkerData[] = [
     {
       id: 1,
-      position: [29.0812, -110.9567], // Plaza Zaragoza
-      name: "Plaza Zaragoza",
-      image: "/api/placeholder/300/200", // Placeholder image
-      description: "Main plaza in downtown Hermosillo",
+      position: [29.0812, -110.9567],
+      name: "Perrito perdido",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ455Hmpf2x6EeNRtrZjJyxXgBtoNlJWh26w&s", // Placeholder image
+      description:
+        "Me encontre a este perrito en la calle, no tiene collar y parece perdido. ¿Alguien lo conoce?",
     },
     {
       id: 2,
       position: [29.0659, -110.9728], // Cerro de la Campana
-      name: "Cerro de la Campana",
-      image: "/api/placeholder/300/200", // Placeholder image
-      description: "Famous hill and landmark in Hermosillo",
+      name: "Perrita rescatada",
+      image:
+        "https://mvsnoticias.com/u/fotografias/m/2023/7/3/f1280x720-547000_678675_5050.jpg", // Placeholder image
+      description:
+        "La rescaté de la calle, está muy asustada pero es muy cariñosa. Busco un hogar temporal o definitivo para ella.",
     },
   ];
 

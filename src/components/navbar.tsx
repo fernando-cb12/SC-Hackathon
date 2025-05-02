@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex flex-col h-screen w-1/16 bg-orange-400 text-white p-4">
+    <div className="fixed flex flex-col h-screen w-1/16 bg-orange-400 text-white p-4">
       <nav className="flex flex-col space-y-2 items-center justify-center">
         <Link
           to="/"

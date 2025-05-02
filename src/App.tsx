@@ -10,9 +10,9 @@ import Dashboard from "./components/Dashboard";
 function App() {
   // Function to render a page with the correct layout and title
   const renderPage = (title: string, Component: React.ComponentType) => (
-    <div className="w-full h-auto flex flex-col bg-gray-100">
+    <div className="w-full min-h-screen flex flex-col bg-gray-100">
       <HeaderContent title={title} />
-      <div className="flex flex-col">
+      <div className="flex-1">
         <Component />
       </div>
     </div>
@@ -20,9 +20,11 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col">
-        <div className="flex flex-row">
-          <Navbar />
+      <div className="flex">
+        <Navbar />
+        <div className="flex-1 pl-24">
+          {" "}
+          {/* Add margin-left instead of padding and use flex-1 to take full width */}
           <Routes>
             <Route path="/" element={renderPage("Home", Home)} />
             <Route
