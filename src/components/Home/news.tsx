@@ -10,7 +10,7 @@ export default function News({
   return (
     <>
       <div className="flex flex-col flex-grow p-4">
-        <div className="bg-white shadow-md rounded-lg p-4 w-75">
+        <div className="bg-white shadow-md rounded-lg p-4 w-90">
           <h2 className="text-xl font-bold">{title}</h2>
           <p className="mt-2">{content}</p>
           <img src={image} alt="News" className="mt-2 rounded-lg" />

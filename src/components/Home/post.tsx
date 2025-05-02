@@ -16,7 +16,7 @@ export default function Post({
           <h2 className="text-xl font-bold">{title}</h2>
           <p className="mt-2">{content}</p>
           <div className="flex justify-center items-center">
-            <img src={image} alt="Post" className="mt-4 rounded-lg max-w-sm" />
+            <img src={image} alt="Post" className="mt-4 rounded-lg " />
           </div>
           <div className="mt-4 flex space-x-4">
             <FaFacebook

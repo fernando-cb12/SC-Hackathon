@@ -10,7 +10,7 @@ import Dashboard from "./components/Dashboard";
 function App() {
   // Function to render a page with the correct layout and title
   const renderPage = (title: string, Component: React.ComponentType) => (
-    <div className="w-full flex flex-col bg-gray-100">
+    <div className="w-full h-auto flex flex-col bg-gray-100">
       <HeaderContent title={title} />
       <div className="flex flex-col">
         <Component />
